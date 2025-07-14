@@ -1,30 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>youtube</title>
     <link href="index.css" rel="stylesheet">
-  </head>
-  <body>
+</head>
+
+<body>
     <div id="top">
-      <div id="left">
-        <img src="menus.png" width="24" height="24" />
-        <img src="1_Youtube2_colored_svg-256.webp" id="logo" />
-      </div>
-      <div id="center">
-        <div id="input">
-          <input type="search" placeholder="Search"/>
-          <img src="loupe.png" />
+        <div id="left">
+            <img id="menus" src="images/menus.png" width="24" height="24" />
+            <img src="images/1_Youtube2_colored_svg-256.webp" id="logo" />
         </div>
-        <img src="microphone.png">
-      </div>
-      <div id="right">
-        <button>+ create</button>
-        <img src="bell.png" id="bell" />
-        <span></span>
-      </div>
+        <div id="center">
+            <div id="input">
+                <input type="search" placeholder="Search" />
+                <img id="loupe" src="images/loupe.png" />
+            </div>
+            <img id="mic" src="images/microphone.png">
+        </div>
+        <div id="right">
+            <button>+ create </button>
+            <img src="images/bell.png" id="bell"/>
+            <span></span>
+
+            <div id="profile">
+            <button class="close" onclick="document.getElementById('profile').style.display='none'">✕</button>
+            <figure class="avatar">
+                <img src="images/pfp.png" alt="Profile avatar" width="120px" height="120px" />
+            </figure>
+            <h2 class="greeting">Hi, Uzochukwu!</h2>
+            <p class="email">uzochukwuIwogbe@gmail.com</p>
+            <button class="primary">Manage your Google Account</button>
+
+            <button class="secondary">
+                <span>Show more accounts</span>
+                <span class="plus">﹢</span>
+            </button>
+        </div>
+
+        </div>
     </div>
-    <div id="bottom"></div>
-  </body>
+    <div id="bottom">
+
+        <div class="container">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/AsUaZXeeQOU?list=RDAsUaZXeeQOU"
+                title="JoJo&#39;s Bizarre Adventure「AMV」- JoJo Pose" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+            <h2>JoJo's Bizarre Adventure [AMV] - JoJo Pose</h2>
+
+            <div class="uploader">
+                <img src="images/pfp.png" alt="Uploader" />
+                <div>
+                    <strong>Uzochukwu I. C.</strong><br>
+                    <small>200.5K subscribers</small>
+                </div>
+                <button class="subscribe-btn">Subscribe</button>
+
+                <div class="video-actions">
+                    <button>👍 177K</button>
+                    <button>🔗 Share</button>
+                    <button>⬇️ Download</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
 </html>
